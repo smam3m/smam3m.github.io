@@ -19,6 +19,28 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            color: white;
+            font-size: 1em;
+            pointer-events: none;
+            animation: fall linear infinite;
+            opacity: 0.8;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+            }
         }
 
         .container {
@@ -153,6 +175,26 @@
     </style>
 </head>
 <body>
+    <div class="snowflake" style="left: 10%; animation-duration: 10s; animation-delay: 0s;">❄</div>
+    <div class="snowflake" style="left: 20%; animation-duration: 12s; animation-delay: 1s;">❄</div>
+    <div class="snowflake" style="left: 30%; animation-duration: 8s; animation-delay: 2s;">❄</div>
+    <div class="snowflake" style="left: 40%; animation-duration: 14s; animation-delay: 0.5s;">❄</div>
+    <div class="snowflake" style="left: 50%; animation-duration: 11s; animation-delay: 1.5s;">❄</div>
+    <div class="snowflake" style="left: 60%; animation-duration: 9s; animation-delay: 0s;">❄</div>
+    <div class="snowflake" style="left: 70%; animation-duration: 13s; animation-delay: 2.5s;">❄</div>
+    <div class="snowflake" style="left: 80%; animation-duration: 10s; animation-delay: 1s;">❄</div>
+    <div class="snowflake" style="left: 90%; animation-duration: 12s; animation-delay: 0.5s;">❄</div>
+    <div class="snowflake" style="left: 15%; animation-duration: 11s; animation-delay: 3s;">❅</div>
+    <div class="snowflake" style="left: 35%; animation-duration: 10s; animation-delay: 2s;">❅</div>
+    <div class="snowflake" style="left: 55%; animation-duration: 13s; animation-delay: 1s;">❅</div>
+    <div class="snowflake" style="left: 75%; animation-duration: 9s; animation-delay: 2.5s;">❅</div>
+    <div class="snowflake" style="left: 85%; animation-duration: 14s; animation-delay: 0s;">❅</div>
+    <div class="snowflake" style="left: 5%; animation-duration: 12s; animation-delay: 1.5s;">❆</div>
+    <div class="snowflake" style="left: 25%; animation-duration: 11s; animation-delay: 0.5s;">❆</div>
+    <div class="snowflake" style="left: 45%; animation-duration: 10s; animation-delay: 2s;">❆</div>
+    <div class="snowflake" style="left: 65%; animation-duration: 13s; animation-delay: 1s;">❆</div>
+    <div class="snowflake" style="left: 95%; animation-duration: 9s; animation-delay: 0s;">❆</div>
+    
     <div class="container">
         <div class="profile">
             <img src="https://i.imgur.com/fsepiIa.jpeg" alt="Ali Mozneb" class="profile-img">
@@ -161,13 +203,13 @@
         </div>
 
         <div class="links">
-            <a href="https://distrokid.com/hyperfollow/alimozneb/relieving-death?utm_campaign=website&utm_medium=Email+&utm_source=SendGrid" class="link-button" style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: #000; border: none; font-weight: 700;">
+            <a href="https://open.spotify.com/album/74cKBcgfJBCOCsSHh6xx3y?utm_campaign=website&utm_medium=Email+&utm_source=SendGrid" class="link-button" style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: #000; border: none; font-weight: 700;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #000;">
                     <path d="M9 18V5l12-2v13"></path>
                     <circle cx="6" cy="18" r="3"></circle>
                     <circle cx="18" cy="16" r="3"></circle>
                 </svg>
-                <span>Pre-Save "Relieving Death" 🎵</span>
+                <span>🎵 Listen to "Relieving Death" - OUT NOW!</span>
             </a>
             
             <a href="https://open.spotify.com/artist/3ALgILjDTNZOmSaZIU2NEd?si=tN4oui71S7ej9v4qcedvgA" class="link-button">
@@ -176,7 +218,7 @@
                 </svg>
                 <span>Spotify</span>
             </a>
-
+            
             <a href="https://alimozneb.bandcamp.com/" class="link-button">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M0 18.75l7.437-13.5h16.563l-7.438 13.5z"/>
@@ -226,6 +268,15 @@
             <a href="https://soundcloud.com/ali-371652511" class="social-link" title="SoundCloud">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c0 .055.045.094.104.094s.09-.039.104-.094l.213-1.308-.213-1.332c-.013-.057-.045-.094-.104-.094M2.04 11.551c-.056 0-.106.049-.106.098l-.227 2.576.214 2.518c0 .049.043.098.106.098.053 0 .105-.049.105-.098l.227-2.518-.227-2.576c0-.049-.052-.098-.092-.098m.93-1.169c-.062 0-.111.049-.111.098l-.227 3.745.227 3.562c0 .049.049.098.111.098.062 0 .111-.049.111-.098l.234-3.562-.234-3.745c0-.049-.049-.098-.111-.098m.964-1.286c-.068 0-.12.055-.12.111l-.234 5.007.234 4.878c0 .062.052.117.12.117.068 0 .12-.055.12-.117l.234-4.878-.234-5.007c0-.056-.052-.111-.12-.111m.97-.722c-.074 0-.131.057-.131.131l-.234 5.736.234 5.604c0 .074.057.131.131.131.068 0 .125-.057.125-.131l.234-5.604-.234-5.736c0-.074-.057-.131-.125-.131m1.004-.646c-.075 0-.137.062-.137.137l-.234 6.376.234 6.209c0 .074.062.137.137.137.074 0 .137-.062.137-.137l.234-6.209-.234-6.376c0-.075-.063-.137-.137-.137m.971-.055c-.081 0-.143.062-.143.137l-.234 6.431.234 6.16c0 .068.062.137.143.137.081 0 .143-.062.143-.137l.234-6.16-.234-6.431c0-.075-.062-.137-.143-.137m1.006.139c-.087 0-.15.068-.15.15l-.233 6.281.233 6.092c0 .074.063.143.15.143.081 0 .143-.068.143-.143l.234-6.092-.234-6.281c0-.082-.062-.15-.143-.15m.98-.204c-.094 0-.162.074-.162.168l-.227 6.485.227 6.037c0 .087.068.162.162.162.087 0 .162-.074.162-.162l.227-6.037-.227-6.485c0-.094-.075-.168-.162-.168m1.025-.06c-.1 0-.168.075-.168.168l-.234 6.604.234 5.943c0 .094.075.168.168.168.094 0 .168-.074.168-.168l.234-5.943-.234-6.604c0-.093-.074-.168-.168-.168m1.013.404c-.106 0-.186.081-.186.186l-.234 6.198.234 5.877c0 .1.08.186.186.186.1 0 .186-.087.186-.186l.227-5.877-.227-6.198c0-.105-.086-.186-.186-.186m1.001-.354c-.106 0-.192.087-.192.192l-.227 6.552.227 5.821c0 .106.086.192.192.192.106 0 .192-.086.192-.192l.234-5.821-.234-6.552c0-.105-.086-.192-.192-.192m1.038.632c-.112 0-.198.093-.198.198l-.227 5.92.227 5.77c0 .111.086.198.198.198.106 0 .198-.087.198-.198l.227-5.77-.227-5.92c0-.105-.092-.198-.198-.198m1.007-.21c-.118 0-.211.094-.211.211l-.234 6.13.234 5.715c0 .118.093.211.211.211.111 0 .211-.093.211-.211l.234-5.715-.234-6.13c0-.117-.1-.211-.211-.211m1.038-.417c-.118 0-.218.1-.218.218l-.234 6.547.234 5.659c0 .124.1.218.218.218.124 0 .218-.094.218-.218l.234-5.659-.234-6.547c0-.118-.094-.218-.218-.218m1.025.13c-.13 0-.228.106-.228.228l-.234 6.417.234 5.622c0 .13.099.234.228.234.13 0 .234-.105.234-.234l.234-5.622-.234-6.417c0-.122-.105-.228-.234-.228m1.038.622c-.137 0-.241.106-.241.241l-.234 5.795.234 5.616c0 .137.104.241.241.241.137 0 .241-.104.241-.241l.234-5.616-.234-5.795c0-.135-.104-.241-.241-.241m1.031-.585c-.143 0-.254.111-.254.254l-.234 6.38.234 5.587c0 .143.111.254.254.254.143 0 .254-.111.254-.254l.234-5.587-.234-6.38c0-.143-.111-.254-.254-.254m1.038.176c-.15 0-.261.118-.261.261l-.234 6.204.234 5.558c0 .15.111.261.261.261.15 0 .261-.111.261-.261l.234-5.558-.234-6.204c0-.143-.111-.261-.261-.261"/>
+                </svg>
+            </a>
+            <a href="https://alimozneb.bandcamp.com/" class="social-link" title="Bandcamp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <circle cx="12" cy="12" r="12" fill="currentColor" opacity="0.2"/>
+                    <path d="M7.5 14.5L11 8.5h9L16.5 14.5z"/>
+                    <text x="17" y="16" font-size="7" font-weight="bold" fill="currentColor">bc</text>
+                </svg>
+            </a> .124.1.218.218.218.124 0 .218-.094.218-.218l.234-5.659-.234-6.547c0-.118-.094-.218-.218-.218m1.025.13c-.13 0-.228.106-.228.228l-.234 6.417.234 5.622c0 .13.099.234.228.234.13 0 .234-.105.234-.234l.234-5.622-.234-6.417c0-.122-.105-.228-.234-.228m1.038.622c-.137 0-.241.106-.241.241l-.234 5.795.234 5.616c0 .137.104.241.241.241.137 0 .241-.104.241-.241l.234-5.616-.234-5.795c0-.135-.104-.241-.241-.241m1.031-.585c-.143 0-.254.111-.254.254l-.234 6.38.234 5.587c0 .143.111.254.254.254.143 0 .254-.111.254-.254l.234-5.587-.234-6.38c0-.143-.111-.254-.254-.254m1.038.176c-.15 0-.261.118-.261.261l-.234 6.204.234 5.558c0 .15.111.261.261.261.15 0 .261-.111.261-.261l.234-5.558-.234-6.204c0-.143-.111-.261-.261-.261"/>
                 </svg>
             </a>
         </div>
