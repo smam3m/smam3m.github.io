@@ -19,8 +19,6 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
-            position: relative;
-            overflow: hidden;
         }
 
         .snowflake {
@@ -32,6 +30,7 @@
             animation: fall linear infinite;
             opacity: 0.8;
             text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            z-index: 0;
         }
 
         @keyframes fall {
@@ -50,6 +49,8 @@
             border-radius: 20px;
             padding: 40px 30px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
         }
 
         .profile {
